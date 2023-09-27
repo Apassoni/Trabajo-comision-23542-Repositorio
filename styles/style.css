@@ -180,6 +180,7 @@ textarea {
 .carrousel{
   width: 100%;
   border: 2px solid rgb(0, 255, 64);
+  padding: 20px;
 }
 
 .conteCarrousel{
