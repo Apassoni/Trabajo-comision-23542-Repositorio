@@ -12,9 +12,15 @@
 }
 
 .active {
-  color: #02022c; /* Cambiar el color del texto para resaltar */
-  text-decoration: underline;
+  /*color: #02022c; /* Cambiar el color del texto para resaltar */
+  /*text-decoration: underline;*/
   font-weight:bolder;
+
+  background: #0c0c0c;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+
 }
 
 h1{
@@ -41,7 +47,7 @@ nav {
 }
 
 .menu {
-    margin: auto;
+  margin: auto;
   display: flex;
   justify-content: center; /* Centra horizontalmente */
  
