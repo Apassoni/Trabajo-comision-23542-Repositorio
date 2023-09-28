@@ -134,6 +134,7 @@ textarea {
   background: #31384A ;
   color: #fff;
   padding: 20px;
+  font-weight:bolder;
 }
 
 #boton:hover {
