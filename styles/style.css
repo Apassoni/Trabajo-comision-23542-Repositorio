@@ -157,6 +157,7 @@ textarea {
 .imagen-con-texto {
   position: relative;
   width: 550px;
+  box-shadow: 10px 10px 10px #070707;
 }
 
 .imagen-con-texto img {
