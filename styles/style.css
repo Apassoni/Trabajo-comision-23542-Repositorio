@@ -11,6 +11,24 @@
   font-family:'Open Sans', sans-serif;
 }
 
+
+/*----------------------------------Inicio linea divisoria---------------------------------------*/  
+.barra-divisoria {
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin: 10px 0; /* Márgenes superior e inferior */
+  transition: background-color 0.3s; /* Efecto de transición de color al pasar el mouse */
+}
+
+.barra-divisoria:hover {
+  background-color: #ff6600; /* Cambio de color al pasar el mouse */
+}
+
+/*----------------------------------Fin linea divisoria---------------------------------------*/  
+
+
+
 .active {
   
   font-weight:bolder;
@@ -29,8 +47,13 @@ h1{
 body {
   background: #eff5f5;
   font-family: 'calibri';
+ 
 }
 
+body p{
+  padding: 5%;
+  line-height: 250%;
+}
 header {
   background: #03A9F4;
   width: 100%;
@@ -52,10 +75,11 @@ nav {
 }
 
 .navbarImg {
-  width: 120px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   float: left;
   padding: 8px;
+  border-radius: 50%;
   
 }
 
@@ -279,6 +303,7 @@ textarea {
 }
 .pie-pagina .grupo-1 .box figure img{
     width: 150px;
+    border-radius: 50%;
    
     
 }
