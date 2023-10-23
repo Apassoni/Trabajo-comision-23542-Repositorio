@@ -13,8 +13,8 @@
 /*----------------------------------Inicio linea divisoria---------------------------------------*/  
 .barra-divisoria {
   width: 100%;
-  height: 2px;
-  background-color: #333;
+  height: 3px;
+  background-color: #383535;
   margin: 10px 0; /* Márgenes superior e inferior */
   transition: background-color 0.3s; /* Efecto de transición de color al pasar el mouse */
 }
