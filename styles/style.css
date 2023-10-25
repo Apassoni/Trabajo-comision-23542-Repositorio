@@ -25,7 +25,39 @@
 
 /*----------------------------------Fin linea divisoria---------------------------------------*/  
 
+/*----------------------------------------------------------------------*/
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
+.card {
+  background-color: #fff;
+  border: 2px solid #270a91;
+  border-radius: 8px;
+  padding: 20px;
+  width: 22%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+
+.card img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.card p {
+  margin-top: 10px;
+  /*margin-bottom: 10px;*/
+}
+
+
+/*-------------------------------------------------------------*/
 
 .active {
   
@@ -300,7 +332,7 @@ textarea {
     
 }
 .pie-pagina .grupo-1 .box figure img{
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
    
     
