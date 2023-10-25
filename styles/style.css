@@ -89,7 +89,7 @@ header {
   width: 100%;
   clear: both;
   content:'';
-  display: table;
+  display: table; 
 }
 
 nav {
