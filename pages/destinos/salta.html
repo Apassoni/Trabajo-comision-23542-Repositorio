@@ -49,53 +49,57 @@
               </nav>
             </div>
         </header>
-    
-        <h1>Salta</h1>
-        
-        <div class="tabla-centrada">
-        <table class="tabla-achicada" border="1">
-            <tr>
-               <td><img src="../../img/destinos/salta.jpg" width="450" height="341"></td>
-               <td>
-                <p class="tres"><b>Salta, ubicada en el noroeste de Argentina, es una provincia que deslumbra</b></p>
-                <p class="tres"><b>a sus visitantes con una combinación única de paisajes espectaculares, </b></p>
-                <p class="tres"><b>una rica herencia cultural y una hospitalidad que te hace sentir como </b></p>
-                <p class="tres"><b>en casa. Conocida como "La Linda" debido a su belleza escénica, Salta </b></p>
-                <p class="tres"><b>es un destino que captura los corazones de todos los que la visitan.</b></p>
-                
-                <p style="color: rgb(36, 36, 176);"><mark>Detalles del paquete:</mark></p>
-                 <p>- Aéreo desde BsAs con Compañía Aérea FLYBONDI.</p>
-                 <p>- 4 Noches en Hotel Libertad con Desayuno</p>
-                 <p>- Excursiones incluidas: Cachi, Cafayate y citytour</p>
-                 <p>- Excursiones opcionales: San Antonio de los Cobres</p>
-                 <p style="color: red;"><mark>Temperatura en Salta: <span id="temperature"></span>°C</mark></p>
-               </td>
-           </tr>
-        </table>
-    </div>
 
-      <script>
-        // Reemplaza 'TU_API_KEY' con tu clave API de OpenWeatherMap
-        const apiKey = '7850e667612bca42d6fd22c055ee27c8';
-        const city = 'Salta';
+        <div class="conteCard1">
+            <div class="card1">
+                <div class="fotoinfo">
+                    <div class="containerimg">
+                        <img src="../../img/destinos/salta.jpg" alt="Imagen Jujuy">
+                    </div>
+                    <div class="containerinfo">
+                        <h1>Salta</h1>   
+                        <p class="tres">
+                                           
+                        Salta, ubicada en el noroeste de Argentina, es una provincia que deslumbra
+                        a sus visitantes con una combinación única de paisajes espectaculares, 
+                        una rica herencia cultural y una hospitalidad que te hace sentir como
+                        en casa. Conocida como "La Linda" debido a su belleza escénica, Salta 
+                        es un destino que captura los corazones de todos los que la visitan.<br><br>
+                                    
+                        <span class="texto-destacado">Detalles del paquete:</span> <br>   
+                        
 
-        // URL de la API de OpenWeatherMap
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+                        - Aéreo desde BsAs con Compañía Aérea FLYBONDI. <br>
+                        - 4 Noches en Hotel Libertad con Desayuno.<br>
+                        - Excursiones incluidas: Cachi, Cafayate y citytour.<br>
+                        - Excursiones opcionales: San Antonio de los Cobres.<br></p>
 
-        // Realizar la solicitud a la API
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                // Actualizar la información en la página
-                document.getElementById('temperature').textContent = data.main.temp;
-                document.getElementById('weather').textContent = data.weather[0].description;
-            })
-            .catch(error => console.error('Error:', error));
-    </script>
+                    </div>
                 </div>
-              
-  
+                <div class="containertemp">
+                    <h1>Temperatura actual en Salta: <span id="temperatura">Cargando...</span></p> </h1><br>
+                </div>
             </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+         
     
 <!--::::Pie de Pagina::::::-->
 
@@ -127,7 +131,7 @@
         <small>&copy; 2023 <b>Phyton</b> - Todos los Derechos Reservados.</small>
     </div>
   </footer>
-    
+  <script src="../../js/api.js"></script> 
     
         
     </body>

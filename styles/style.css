@@ -13,24 +13,6 @@
   color: rgb(36, 36, 176);
 }
 
-/* Estilo para achicar la tabla */
-            
-th, td {
-  padding: 1px; /* Espaciado interior de las celdas */
-}
-
-/* Estilo para centrar la tabla */
-.tabla-centrada {
-  margin: 0 auto; /* Margen horizontal automático para centrar */
-}
-
-.tabla-achicada {
-margin-left: auto;
-margin-right: auto;
-/*line-height: 1;*/
-/*border: 2px solid rgb(0, 255, 64);*/
-
-}
 
 .uno{
   font-size:1em;
@@ -126,7 +108,7 @@ margin-right: auto;
 
 .card1 img {
   margin-top: 40px;
-  height: 450px;
+  height: 400px;
 }
 
 .card1 p {

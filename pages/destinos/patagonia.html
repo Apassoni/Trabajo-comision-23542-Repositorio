@@ -50,57 +50,49 @@
               </nav>
             </div>
         </header>
-    
-        <h1>Patagonia Argentina</h1>
-        
-        <div class="tabla-centrada">
-        <table class="tabla-achicada" border="1">
-            <tr>
-               <td><img src="../../img/destinos/patagonia.jpg" width="450" height="341"></td>
-               <td>
-                <p class="tres"><b>La Patagonia Argentina es un rincón remoto y mágico del mundo que te invita a explorar su </b></p>
-                <p class="tres"><b>vasta belleza natural. Conocida por sus paisajes impresionantes, esta región es un destino </b></p>
-                <p class="tres"><b>turístico único que combina la majestuosidad de la montaña, la inmensidad de los glaciares y </b></p>
-                <p class="tres"><b>la belleza de la costa marina.</b></p>
-                <p class="tres"><b>Desde los picos nevados de la Cordillera de los Andes hasta los deslumbrantes campos de</b></p>
-                <p class="tres"><b>hielo como el Perito Moreno, la Patagonia te sumerge en un mundo de aventuras al aire libre</b></p>
-                
-                <p style="color: rgb(36, 36, 176);"><mark>Detalles del paquete:</mark></p>
-                 <p>- Aéreo desde BsAs con Compañía Aérea Aerolineas Argentinas.</p>
-                 <p>- media pensión desayuno</p>
-                 <p>- 3 Noches en Usuhuaia (Hotel Portal del Mar)</p>
-                 <p>- 3 Noches en Puerto Madryn (Hotel Imperial)</p>
-                 <p>- Excursiones incluidas: Glaciar Perito Moreno - Chaltén</p>
-                 <p>- Excursiones opcionales: Isla Martillo, Parque Los Glaciares</p>
-                 
-                 <p style="color: red;"><mark>Temperatura en Usuhuaia: <span id="temperature"></span>°C</mark></p>
-               </td>
-           </tr>
-        </table>
-    </div>
 
-      <script>
-        // Reemplaza 'TU_API_KEY' con tu clave API de OpenWeatherMap
-        const apiKey = '7850e667612bca42d6fd22c055ee27c8';
-        const city = 'Ushuaia';
 
-        // URL de la API de OpenWeatherMap
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+        <div class="conteCard1">
+            <div class="card1">
+                <div class="fotoinfo">
+                    <div class="containerimg">
+                        <img src="../../img/destinos/patagonia.jpg" alt="Imagen Patagonia">
+                    </div>
+                    <div class="containerinfo">
+                        <h1>Patagonia Argentina</h1>   
+                        <p class="tres">
+                            
+                        La Patagonia Argentina es un rincón remoto y mágico del mundo que te invita a explorar su 
+                        vasta belleza natural. Conocida por sus paisajes impresionantes, esta región es un destino
+                        turístico único que combina la majestuosidad de la montaña, la inmensidad de los glaciares
+                        y la belleza de la costa marina. Desde los picos nevados de la Cordillera de los Andes
+                        hasta los deslumbrantes campos de hielo como el Perito Moreno, la Patagonia te sumerge
+                        en un mundo de aventuras al aire libre. <br><br>
 
-        // Realizar la solicitud a la API
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => {
-                // Actualizar la información en la página
-                document.getElementById('temperature').textContent = data.main.temp;
-                document.getElementById('weather').textContent = data.weather[0].description;
-            })
-            .catch(error => console.error('Error:', error));
-    </script>
+                        <span class="texto-destacado">Detalles del paquete:</span> <br>   
+
+
+                        - Aéreo desde BsAs con Compañía Aérea Aerolineas Argentinas. <br>
+                        - Media pensión desayuno <br>
+                        - 3 Noches en Usuhuaia (Hotel Portal del Mar) <br>
+                        - 3 Noches en Puerto Madryn (Hotel Imperial) <br>
+                        - Excursiones incluidas: Glaciar Perito Moreno - Chaltén <br>
+                        - Excursiones opcionales: Isla Martillo, Parque Los Glaciares <br></p>
+                        
+                        
+                    </div>
                 </div>
+                <div class="containertemp">
+                    <h1>Temperatura actual en La Patagonia: <span id="temperatura">Cargando...</span></p> </h1><br>
+                </div>
+            </div>
+        </div>
+    
+        
+               
               
   
-            </div>
+         
     
 <!--::::Pie de Pagina::::::-->
 
@@ -132,7 +124,7 @@
         <small>&copy; 2023 <b>Phyton</b> - Todos los Derechos Reservados.</small>
     </div>
   </footer>
-    
+  <script src="../../js/api.js"></script>   
     
         
     </body>
