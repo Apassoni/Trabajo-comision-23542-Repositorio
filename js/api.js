@@ -19,8 +19,8 @@ function consultarTemperatura(city) {
 
 
 
-// Programar actualización cada 1 minuto (60000 ms)
-setInterval(consultarTemperatura, 60000);
+// Programar actualización cada 15 minutos (900000 ms)
+setInterval(consultarTemperatura, 900000);
 
 document.addEventListener("DOMContentLoaded",()=>{
 
