@@ -16,6 +16,11 @@
 //    })
 //    .catch(error => console.error('Error:', error));
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Tu código JavaScript aquí
+
+
+
 
 const apiKey = '7850e667612bca42d6fd22c055ee27c8';
 const city = 'Jujuy';
@@ -39,3 +44,5 @@ consultarTemperatura();
 
 // Programar actualización cada 1 minuto (60000 ms)
 setInterval(consultarTemperatura, 60000);
+
+});
