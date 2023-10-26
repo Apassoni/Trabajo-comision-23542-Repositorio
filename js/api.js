@@ -1,5 +1,5 @@
 const apiKey = "7850e667612bca42d6fd22c055ee27c8";
-//const city = 'Jujuy';
+
 const city2 = "Ushuaia";
 //const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
