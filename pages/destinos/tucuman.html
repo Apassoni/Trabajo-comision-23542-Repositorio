@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+         <!-- Metadatos -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Grupo CodoACodo">
+        <meta name="description" content="Proyecto Integrador Codo a Codo">
+        <meta name="keywords" content="Agencia, Viajes">
+        
+        <!-- Titulo -->
+        <title>Agencia de viajes</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../styles/style.css">
+        <!--Iconos-->
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/icono.png">
+        
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        
+        <!--Iconos-->
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+      
+        
+    </head>
+
+    <body>
+
+        <!-- Barra de navegacion -->
+        <header>
+            <div class="menu">
+              
+              <nav>
+                  <ul>
+                    <img src="../../img/logo.png" class="navbarImg" alt="">
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="../../pages/destinos.html" class="active">Destinos</a></li>
+                    <li><a href="../../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../../pages/contacto.html">Contacto</a></li>
+                  </ul>
+              </nav>
+            </div>
+        </header>
+    
+        <h1>Tucuman</h1>
+        
+        <div class="tabla-centrada">
+        <table class="tabla-achicada" border="1">
+            <tr>
+               <td><img src="../../img/destinos/tucuman.jpg" width="450" height="341"></td>
+               <td>
+                <p class="tres"><b>Tucumán, la provincia más pequeña de Argentina, es un tesoro escondido que combina</b></p>
+                <p class="tres"><b>historia, cultura y belleza natural en un paquete compacto. Conocida como "El Jardín de la </b></p>
+                <p class="tres"><b> República", esta región es un destino turístico diverso y encantador.</b></p>
+                <p class="tres"><b>Puedes explorar lugares históricos como la Casa de Tucumán y la Casa Histórica,</b></p>
+                <p class="tres"><b> que te transportarán al pasado de la nación.</b></p>
+                
+                <p style="color: rgb(36, 36, 176);"><mark>Detalles del paquete:</mark></p>
+                 <p>- Aéreo desde BsAs con Compañía Aérea Aerolineas Argentinas.</p>
+                 <p>- media pensión desayuno</p>
+                 <p>- 4 Noches en Tucumán (Hotel Premier)</p>
+                 <p>- Excursiones incluidas: Citytour, Yungas de Tucumán, Ruinas de Quilmes </p>
+                 <p>- Excursiones opcionales: Tafi del Valle</p>
+                 <p style="color: red;"><mark>Temperatura en Tucumán: <span id="temperature"></span>°C</mark></p>
+               </td>
+           </tr>
+        </table>
+    </div>
+
+      <script>
+        // Reemplaza 'TU_API_KEY' con tu clave API de OpenWeatherMap
+        const apiKey = '7850e667612bca42d6fd22c055ee27c8';
+        const city = 'Tucuman';
+
+        // URL de la API de OpenWeatherMap
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+        // Realizar la solicitud a la API
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                // Actualizar la información en la página
+                document.getElementById('temperature').textContent = data.main.temp;
+                document.getElementById('weather').textContent = data.weather[0].description;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+                </div>
+              
+  
+            </div>
+    
+<!--::::Pie de Pagina::::::-->
+
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="../../img/logo.png" alt="Logo Escápate">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2><b>Escápate</b></h2>
+            <p>Agencia de viajes</p>
+            <p>Argentina</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>Phyton</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+    
+    
+        
+    </body>
+
+</html>

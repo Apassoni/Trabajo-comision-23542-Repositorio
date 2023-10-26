@@ -9,6 +9,45 @@
   font-family:'Open Sans', sans-serif;
 }
 
+.texto-destacado {
+  color: rgb(36, 36, 176);
+}
+
+/* Estilo para achicar la tabla */
+            
+th, td {
+  padding: 1px; /* Espaciado interior de las celdas */
+}
+
+/* Estilo para centrar la tabla */
+.tabla-centrada {
+  margin: 0 auto; /* Margen horizontal automático para centrar */
+}
+
+.tabla-achicada {
+margin-left: auto;
+margin-right: auto;
+/*line-height: 1;*/
+/*border: 2px solid rgb(0, 255, 64);*/
+
+}
+
+.uno{
+  font-size:1em;
+  line-height:0.5em;
+}
+
+.dos{
+  font-size:1em;
+  line-height:1em;
+}
+
+.tres{
+  font-size:1em;
+  line-height:1.5em;
+  text-align: justify;
+}
+
 
 /*----------------------------------Inicio linea divisoria---------------------------------------*/  
 .barra-divisoria {
@@ -58,6 +97,57 @@
 
 
 /*-------------------------------------------------------------*/
+.conteCard1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #e0dbdbda;
+}
+
+.card1 {
+  background-color: #ffffffab;
+  border: 3px solid #270a91;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  
+}
+
+.card1 img {
+  margin-top: 30px;
+  height: 450px;
+}
+
+.card1 p {
+  /*margin-top: 10px;*/
+  /*margin-bottom: 10px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .active {
   
@@ -71,7 +161,7 @@
 
 h1{
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.8 rem;
 }
 
 body {
