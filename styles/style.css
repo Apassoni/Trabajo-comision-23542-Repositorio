@@ -475,6 +475,16 @@ textarea {
       }
     
     }
-    
+  
+      /* Media query para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Cambia la dirección a "column" para apilar las tarjetas */
+    }
+
+    .card {
+      width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+    }
+}
 
 }
