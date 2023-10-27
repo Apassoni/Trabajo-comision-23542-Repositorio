@@ -53,6 +53,7 @@
   font-size: 1rem;
   
 }
+
 .escapate{
   display: flex;
   width: 100%;
@@ -60,14 +61,25 @@
   justify-content: center;
   position: relative; /* Para posicionar la imagen */
   margin-top: 20px;
-  
+}
+
+.textoescapate{
+  color: black;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+.textoescapate2{
+  color: black;
+  font-size: 1.5rem;
+  font-weight:lighter;
+  text-align: center;
 }
 
 .escapate img {
   height: 100%; /* Hace que la imagen ocupe todo el alto del div */
   position: absolute; /* La imagen se posiciona dentro del div */
   border-radius: 50%;
-  
+
 }
 
 
