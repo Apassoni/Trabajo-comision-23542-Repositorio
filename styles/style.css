@@ -90,6 +90,7 @@
 
 .fotoinfo{
   display: flex;
+  flex-wrap: wrap; 
 }
 
 .card1 {
@@ -105,10 +106,16 @@
   /*justify-content: center;*/
   
 }
+.containerimg{
+  width: 100%;
+}
 
-.card1 img {
-  margin-top: 40px;
-  height: 400px;
+.containerimg img {
+  /*margin-top: 40px;
+  height: auto;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*.card1 p {
