@@ -67,6 +67,7 @@
   height: 100%; /* Hace que la imagen ocupe todo el alto del div */
   position: absolute; /* La imagen se posiciona dentro del div */
   border-radius: 50%;
+  
 }
 
 
@@ -170,7 +171,7 @@ h1{
 body {
   background: #d4d6d6;
   font-family: 'calibri';
-  
+
  
 }
 
