@@ -53,19 +53,20 @@
         <!-- <h1>Contacto</h1> -->
 
         <!-- formsubmit.co Formulario de Contacto-->
+        
        
             <div>
-                <form action="https://formsubmit.co/atiliopassoni@gmail.com" method="post" target="_blank">
+                <form action="https://formsubmit.co/atiliopassoni@gmail.com" id="formulariojs" method="post" target="_blank" >
                    
                     <h2>Ingresa tus datos:</h2>
                             
-                        <input id="fname" name="name" required type="text" placeholder="Nombres" class="form-control" max="15" min="3">
+                        <input id="fname" name="name"   type="text" placeholder="Nombres" class="form-control" max="15" min="3">
                     
                 
-                        <input id="lname" name="lname" required type="text" placeholder="Apellidos" class="form-control" max="15" min="3">
+                        <input id="lname" name="lname"  type="text" placeholder="Apellidos" class="form-control" max="15" min="3">
             
 
-                        <input id="email" name="email" required type="email" placeholder="Correo Electrónico" class="form-control">
+                        <input id="email" name="email"  type="email" placeholder="Correo Electrónico" class="form-control">
                 
                 
                         <input id="phone" name="phone" type="text" placeholder="Numero de Teléfono" class="form-control">
@@ -76,8 +77,10 @@
             
         
                         <button type="submit" id="boton" >Enviar</button>
-                
+
+                        <div id="error"></div>
                 </form>
+                
             </div>
     
         
@@ -112,7 +115,7 @@
   </footer>
     
      
-       
+  <script src="../js/formulario.js"></script>       
     </body>
 
 </html>
