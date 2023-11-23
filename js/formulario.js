@@ -6,6 +6,8 @@ var mensaje = document.getElementById("message");
 var error = document.getElementById("error");
 error.style.color = "red";
 
+var expReg =
+  /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
 var form = document.getElementById("formulariojs");
 form.addEventListener("submit", function (evento) {
@@ -20,7 +22,11 @@ form.addEventListener("submit", function (evento) {
     mensajesError.push("Ingresa un apellido");
   }
 
-  if (correo.value === null || correo.value === "") {
+  if (
+    correo.value === null ||
+    correo.value === "" ||
+    !expReg.test(correo.value)
+  ) {
     mensajesError.push("Ingresa un correo valido");
   }
 
